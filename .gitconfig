@@ -1,12 +1,11 @@
 [alias]
-	log = log --graph --pretty=format:'%Cred%h%Creset - %C(bold red)%an%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr)%Creset' --abbrev-commit --date=relative -20
 	st = status
 	co = checkout
-        ci = commit
+  ci = commit
 	pr = pull --rebase
 [user]
-	name = Emily 
-	email = 
+	name = Emily
+	email =
 [color]
 	branch = auto
 	diff = auto
@@ -16,3 +15,5 @@
 	tool = opendiff
 [push]
 	default = current
+[format]
+  pretty = format:"%h %C(yellow)%ci%Creset %Cgreen%an%Creset | %s"
